@@ -1,0 +1,1174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>forms generator</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/colorpicker.js"></script>
+	<script type="text/javascript" src="http://www.travelmenu.ru/misc/js/lib/jquery/rangeSlider.20110914188537.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<link href="css/all.css" type="text/css" rel="stylesheet" />
+	<!--link href="http://www.eyecon.ro/colorpicker/css/colorpicker.css" type="text/css" rel="stylesheet" /-->
+	<link href="css/colorpicker.css" type="text/css" rel="stylesheet" />
+	<link href="http://www.travelmenu.ru/misc/css/all.20110914188536.css" type="text/css" rel="stylesheet" />
+	
+</head>
+<body style="font-size:12px; font-family: arial;">
+	<div class="wrapper">
+		<div class="block editbox rounded" >
+			<div class="tabs-holder">
+				<div class="tabs-titles">
+					<ul>
+						<li><a class="active" href="#tab1">Наполнение формы</a></li>
+						<li><a href="#tab2">Визуальное оформление</a></li>
+						<li><a href="#tab3">Лучшие предложения</a></li>
+					</ul>
+				</div>
+				<div class="tabs-list">
+					<form action="#">
+						<fieldset>
+						<div class="tab" id="tab1">
+							<div class="form-row">
+								<label>SubId: </label>
+								<input type="text" name="subid" id="SubId" value="SubId" /><!-- value="... ? ..."--> 
+							</div>
+							<div class="form-row">
+								<label>Заголовок: </label>
+								<input type="text" name="title" id="form-ttl" value="" />
+							</div>
+							<div class="form-row">
+								<label>Типы продуктов: </label>
+								<div class="cat-selecter">
+									<select name="tabtype1" id="tabtype1">
+										<option value="0"></option>
+										<option selected="selected" value="t">Туры</option>
+										<option value="h">Отели</option>
+										<option value="f">Авиа</option>
+									</select>
+									<select name="tabtype2" id="tabtype2">
+										<option value="0"></option>
+										<option value="t">Туры</option>
+										<option selected="selected" value="h">Отели</option>
+										<option value="f">Авиа</option>
+									</select>
+									<select name="tabtype3" id="tabtype3">
+										<option value="0"></option>
+										<option value="t">Туры</option>
+										<option value="h">Отели</option>
+										<option selected="selected" value="f">Авиа</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-row">
+								<label>Валюта: </label>
+								<select name="currency" class="currency" id="currency">
+									<option value="ru">Рубли</option>
+									<option value="ua">Гривны</option>
+									<option value="us">Доллары</option>
+									<option value="eu">Евро</option>
+								</select>
+							</div>
+							<div class="form-row">
+								<div class="tour-wrapper">
+									<div class="tour-item">
+										<span class="title">Туры</span>
+										<div class="item-row">
+											<label>Откуда:</label>
+											<select name="dci" id="th" class="big-select">
+												<option title="title" value="0">Выберите...</option>
+													<optgroup label="Популярные">
+													<option selected="selected" value="38218">													Москва											</option>
+													<option value="32930">												Санкт-Петербург	</option>
+												</optgroup>
+												<optgroup label="Другие">
+													<option value="122706">													Екатеринбург										</option>
+													<option value="32170">													Казань										</option>
+													<option value="136420">													Нижний Новгород										</option>
+													<option value="44842">													Новосибирск										</option>
+													<option value="136423">													Пермь										</option>
+												</optgroup>
+											</select>
+										</div>
+										<div class="item-row">
+											<label>Куда: </label>
+											<select class="big-select" id="tp" name="aco">
+											<option title="title" value="">Выберите...</option>
+											<optgroup label="Популярные">											<option value="at">
+															Австрия											</option>
+																									<option selected="selected" value="eg">
+															Египет											</option>
+																									<option value="in">
+															Индия											</option>
+																									<option value="id">
+															Индонезия											</option>
+																									<option value="it">
+															Италия											</option>
+																									<option value="mv">
+															Мальдивы											</option>
+																									<option value="th">
+															Таиланд											</option>
+																									<option value="fi">
+															Финляндия											</option>
+																									<option value="fr">
+															Франция											</option>
+																									<option value="ch">
+															Швейцария											</option>
+														</optgroup>
+														<optgroup label="Другие">										<option value="at">
+														Австрия										</option>
+																							<option value="ad">
+														Андорра										</option>
+																							<option value="be">
+														Бельгия										</option>
+																							<option value="bg">
+														Болгария										</option>
+																							<option value="br">
+														Бразилия										</option>
+																							<option value="gb">
+														Великобритания										</option>
+																							<option value="hu">
+														Венгрия										</option>
+																							<option value="vn">
+														Вьетнам										</option>
+																							<option value="de">
+														Германия										</option>
+																							<option value="gr">
+														Греция										</option>
+																							<option value="dk">
+														Дания										</option>
+																							<option value="do">
+														Доминиканская Республика										</option>
+																							<option selected="selected" value="eg">
+														Египет										</option>
+																							<option value="il">
+														Израиль										</option>
+																							<option value="in">
+														Индия										</option>
+																							<option value="id">
+														Индонезия										</option>
+																							<option value="jo">
+														Иордания										</option>
+																							<option value="ie">
+														Ирландия										</option>
+																							<option value="is">
+														Исландия										</option>
+																							<option value="es">
+														Испания										</option>
+																							<option value="it">
+														Италия										</option>
+																							<option value="ke">
+														Кения										</option>
+																							<option value="cy">
+														Кипр										</option>
+																							<option value="cn">
+														Китай										</option>
+																							<option value="cu">
+														Куба										</option>
+																							<option value="lv">
+														Латвия										</option>
+																							<option value="lt">
+														Литва										</option>
+																							<option value="mu">
+														Маврикий										</option>
+																							<option value="my">
+														Малайзия										</option>
+																							<option value="mv">
+														Мальдивы										</option>
+																							<option value="ma">
+														Марокко										</option>
+																							<option value="mx">
+														Мексика										</option>
+																							<option value="nl">
+														Нидерланды										</option>
+																							<option value="no">
+														Норвегия										</option>
+																							<option value="ae">
+														Объединенные Арабские Эмираты										</option>
+																							<option value="om">
+														Оман										</option>
+																							<option value="pl">
+														Польша										</option>
+																							<option value="pt">
+														Португалия										</option>
+																							<option value="ru">
+														Россия										</option>
+																							<option value="sc">
+														Сейшельские острова										</option>
+																							<option value="sg">
+														Сингапур										</option>
+																							<option value="sk">
+														Словакия										</option>
+																							<option value="si">
+														Словения										</option>
+																							<option value="us">
+														Соединенные Штаты Америки										</option>
+																							<option value="th">
+														Таиланд										</option>
+																							<option value="tn">
+														Тунис										</option>
+																							<option value="tr">
+														Турция										</option>
+																							<option value="ua">
+														Украина										</option>
+																							<option value="ph">
+														Филиппины										</option>
+																							<option value="fi">
+														Финляндия										</option>
+																							<option value="fr">
+														Франция										</option>
+																							<option value="hr">
+														Хорватия										</option>
+																							<option value="me">
+														Черногория										</option>
+																							<option value="cz">
+														Чехия										</option>
+																							<option value="ch">
+														Швейцария										</option>
+																							<option value="se">
+														Швеция										</option>
+																							<option value="lk">
+														Шри-Ланка										</option>
+																							<option value="ee">
+														Эстония										</option>
+													</optgroup>							</select>
+										</div>
+										<div class="item-row">
+											<label>Дата вылета: </label>
+											<input type="text" id="td" class="calendar" data-offset="14" value=" / / "/>
+										</div>
+										<div class="item-row">
+											<label for="night1">Ночей</label>
+											<select id="night1" name="nf">
+													<option value="1" >1</option>
+													<option value="2" >2</option>
+													<option value="3" >3</option>
+													<option value="4" >4</option>
+													<option value="5" selected="selected">5</option>
+													<option value="6" >6</option>
+													<option value="7" >7</option>
+													<option value="8" >8</option>
+													<option value="9" >9</option>
+													<option value="10" >10</option>
+													<option value="11" >11</option>
+													<option value="12" >12</option>
+													<option value="13" >13</option>
+													<option value="14" >14</option>
+													<option value="15" >15</option>
+													<option value="16" >16</option>
+													<option value="17" >17</option>
+													<option value="18" >18</option>
+													<option value="19" >19</option>
+													<option value="20" >20</option>
+													<option value="21" >21</option>
+													<option value="22" >22</option>
+													<option value="23" >23</option>
+													<option value="24" >24</option>
+													<option value="25" >25</option>
+													<option value="26" >26</option>
+													<option value="27" >27</option>
+													<option value="28" >28</option>
+													<option value="29" >29</option>
+													<option value="30" >30</option>
+											</select>
+											<select id="night2" name="nf">
+													<option value="1" >1</option>
+													<option value="2" >2</option>
+													<option value="3" >3</option>
+													<option value="4" >4</option>
+													<option value="5" selected="selected">5</option>
+													<option value="6" >6</option>
+													<option value="7" >7</option>
+													<option value="8" >8</option>
+													<option value="9" >9</option>
+													<option value="10" >10</option>
+													<option value="11" >11</option>
+													<option value="12" >12</option>
+													<option value="13" >13</option>
+													<option value="14" >14</option>
+													<option value="15" >15</option>
+													<option value="16" >16</option>
+													<option value="17" >17</option>
+													<option value="18" >18</option>
+													<option value="19" >19</option>
+													<option value="20" >20</option>
+													<option value="21" >21</option>
+													<option value="22" >22</option>
+													<option value="23" >23</option>
+													<option value="24" >24</option>
+													<option value="25" >25</option>
+													<option value="26" >26</option>
+													<option value="27" >27</option>
+													<option value="28" >28</option>
+													<option value="29" >29</option>
+													<option value="30" >30</option>
+											</select>
+										</div>
+
+										<div class="item-row class">
+											<label>Класс отеля</label>
+											<div class="quad-left">
+												<div class="select">
+													<div class="select-holder">
+														<select id="tStars1" name="g[]">
+																<option value="1" >1*</option>
+																<option value="2" >2*</option>
+																<option value="3" selected="selected">3*</option>
+																<option value="4" >4*</option>
+																<option value="5" >5*</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="quad-right">
+												<div class="select">
+													<div class="select-holder">
+														<select id="tStars2" name="g[]">
+																<option value="1" >1*</option>
+																<option value="2" >2*</option>
+																<option value="3" >3*</option>
+																<option value="4" >4*</option>
+																<option value="5" selected="selected">5*</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item-row">
+											<label>Питание</label>
+											<div class="select">
+												<div class="select-holder">
+													<select id="tfood" name="b">
+														<option value="0">Не важно</option>
+														<option value="AI" >Все включено</option>
+														<option value="BB" >Завтрак</option>
+														<option value="HB" >Завтрак и ужин</option>
+														<option value="FB" >Завтрак, обед, ужин</option>
+														<option value="RO" >Без питания</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="item-row">
+											<label>Взрослые</label>
+											<div class="select">
+												<div class="select-holder">
+													<select id="tourPassengersCount" name="adc[0]">
+														<option value="1" >1</option>
+														<option value="2" selected="selected">2</option>
+														<option value="3" >3</option>
+														<option value="4" >4</option>
+														<option value="5" >5</option>
+														<option value="6" >6</option>
+														<option value="7" >7</option>
+														<option value="8" >8</option>
+												</select>
+												</div>
+											</div>
+										</div>
+										<div class="item-row">
+											<label>Дети</label>
+											<div class="select">
+												<div class="select-holder">
+													<select id="tourChildrenCount">
+														<option value="0" selected="selected">-</option>
+																<option value="1" >1</option>
+																<option value="2" >2</option>
+																<option value="3" >3</option>
+														</select>
+												</div>
+											</div>
+										</div>
+										<div class="item-row">
+											<label for="tprice">Цена:</label>
+											<input type="checkbox" id="tprice" /> 
+										</div>
+									</div>
+									<div class="tour-item">
+										<span class="title">Отели</span>
+										<!--div class="item-row">
+											<label>Где:</label>
+											<select name="dci" class="big-select">
+												<option title="title" value="0">Выберите...</option>
+													<optgroup label="Популярные">
+													<option selected="selected" value="38218">													Москва											</option>
+													<option value="32930">												Санкт-Петербург	</option>
+												</optgroup>
+												<optgroup label="Другие">
+													<option value="122706">													Екатеринбург										</option>
+													<option value="32170">													Казань										</option>
+													<option value="136420">													Нижний Новгород										</option>
+													<option value="44842">													Новосибирск										</option>
+													<option value="136423">													Пермь										</option>
+												</optgroup>
+											</select>
+										</div-->
+										<div class="item-row">
+											<label for="hname">Название отеля</label>
+											<input type="checkbox" id="hname" /> 
+										</div>	
+										<div class="item-row">
+											<label>Дата заезда: </label>
+											<input type="text" class="calendar" id="hd1" data-offset="14" value=" / / "/>
+										</div>
+										<div class="item-row">
+											<label>Дата выезда: </label>
+											<input type="text" class="calendar" id="hd2" data-offset="15" value=" / / "/>
+										</div>
+										
+
+
+
+										<div class="row">
+											<div class="double">
+												<div class="item-row class">
+													<label>Класс отеля</label>
+													<div class="quad-left">
+														<div class="select">
+															<div class="select-holder">
+																<select id="sfhStars1" name="g[]">
+																		<option value="1" >1*</option>
+																		<option value="2" >2*</option>
+																		<option value="3" selected="selected">3*</option>
+																		<option value="4" >4*</option>
+																		<option value="5" >5*</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div class="quad-right">
+														<div class="select">
+															<div class="select-holder">
+																<select id="sfhStars2" name="g[]">
+																		<option value="1" >1*</option>
+																		<option value="2" >2*</option>
+																		<option value="3" >3*</option>
+																		<option value="4" >4*</option>
+																		<option value="5" selected="selected">5*</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+																						
+												<div class="item-row">
+													<label>Питание</label>
+													<div class="select">
+														<div class="select-holder">
+															<select id="food" name="b">
+																<option value="0">Не важно</option>
+																<option value="AI" >Все включено</option>
+																<option value="BB" >Завтрак</option>
+																<option value="HB" >Завтрак и ужин</option>
+																<option value="FB" >Завтрак, обед, ужин</option>
+																<option value="RO" >Без питания</option>
+															</select>
+														</div>
+													</div>
+												</div>
+																	
+																
+												<div class="item-row">
+													<div class="quad-left">
+														<label>Взрослые</label>
+															<div class="select">
+															<div class="select-holder">
+																<select id="hotelPassengersCount" name="adc[0]">
+																	<option value="1" >1</option>
+																	<option value="2" selected="selected">2</option>
+																	<option value="3" >3</option>
+																	<option value="4" >4</option>
+																	<option value="5" >5</option>
+																	<option value="6" >6</option>
+																	<option value="7" >7</option>
+																	<option value="8" >8</option>
+															</select>
+															</div>
+														</div>
+													</div>
+													<div class="quad-right" style="width:100%; margin:10px 0 0;">
+														<label>Дети</label>
+														<div class="select">
+															<div class="select-holder">
+																<select id="hotelChildrenCount">
+																	<option value="0" selected="selected">-</option>
+																	<option value="1" >1</option>
+																	<option value="2" >2</option>
+																	<option value="3" >3</option>
+															</select>
+															</div>
+														</div>
+													</div>
+												</div>
+																		
+												<div class="item-row">
+													<!--div class="quad-left"></div-->
+													<div class="quad-right">
+														<label>Номера</label>
+														<div class="select">
+															<div class="select-holder">
+																<select id="sfhRooms" name="r">
+																		<option value="1" selected="selected">1</option>
+																		<option value="2" >2</option>
+																		<option value="3" >3</option>
+																		<option value="4" >4</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-row">
+													<label for="hlocation">Рядом с:</label>
+													<input type="checkbox" id="hlocation" /> 
+												</div>												
+												<div class="item-row">
+													<label for="hprice">Цена:</label>
+													<input type="checkbox" id="hprice" /> 
+												</div>
+											</div>
+										</div>
+
+										<!--div class="item-row">
+
+											<select class="big-select" name="aco">
+											<option title="title" value="">Выберите...</option>
+											<optgroup label="Популярные">											<option value="at">
+															Австрия											</option>
+																									<option value="eg">
+															Египет											</option>
+																									<option value="in">
+															Индия											</option>
+																									<option value="id">
+															Индонезия											</option>
+																									<option value="it">
+															Италия											</option>
+																									<option value="mv">
+															Мальдивы											</option>
+																									<option value="th">
+															Таиланд											</option>
+																									<option value="fi">
+															Финляндия											</option>
+																									<option value="fr">
+															Франция											</option>
+																									<option value="ch">
+															Швейцария											</option>
+														</optgroup><optgroup label="Другие">										<option value="at">
+														Австрия										</option>
+																							<option value="ad">
+														Андорра										</option>
+																							<option value="be">
+														Бельгия										</option>
+																							<option value="bg">
+														Болгария										</option>
+																							<option value="br">
+														Бразилия										</option>
+																							<option value="gb">
+														Великобритания										</option>
+																							<option value="hu">
+														Венгрия										</option>
+																							<option value="vn">
+														Вьетнам										</option>
+																							<option value="de">
+														Германия										</option>
+																							<option value="gr">
+														Греция										</option>
+																							<option value="dk">
+														Дания										</option>
+																							<option value="do">
+														Доминиканская Республика										</option>
+																							<option selected="selected" value="eg">
+														Египет										</option>
+																							<option value="il">
+														Израиль										</option>
+																							<option value="in">
+														Индия										</option>
+																							<option value="id">
+														Индонезия										</option>
+																							<option value="jo">
+														Иордания										</option>
+																							<option value="ie">
+														Ирландия										</option>
+																							<option value="is">
+														Исландия										</option>
+																							<option value="es">
+														Испания										</option>
+																							<option value="it">
+														Италия										</option>
+																							<option value="ke">
+														Кения										</option>
+																							<option value="cy">
+														Кипр										</option>
+																							<option value="cn">
+														Китай										</option>
+																							<option value="cu">
+														Куба										</option>
+																							<option value="lv">
+														Латвия										</option>
+																							<option value="lt">
+														Литва										</option>
+																							<option value="mu">
+														Маврикий										</option>
+																							<option value="my">
+														Малайзия										</option>
+																							<option value="mv">
+														Мальдивы										</option>
+																							<option value="ma">
+														Марокко										</option>
+																							<option value="mx">
+														Мексика										</option>
+																							<option value="nl">
+														Нидерланды										</option>
+																							<option value="no">
+														Норвегия										</option>
+																							<option value="ae">
+														Объединенные Арабские Эмираты										</option>
+																							<option value="om">
+														Оман										</option>
+																							<option value="pl">
+														Польша										</option>
+																							<option value="pt">
+														Португалия										</option>
+																							<option value="ru">
+														Россия										</option>
+																							<option value="sc">
+														Сейшельские острова										</option>
+																							<option value="sg">
+														Сингапур										</option>
+																							<option value="sk">
+														Словакия										</option>
+																							<option value="si">
+														Словения										</option>
+																							<option value="us">
+														Соединенные Штаты Америки										</option>
+																							<option value="th">
+														Таиланд										</option>
+																							<option value="tn">
+														Тунис										</option>
+																							<option selected="selected"  value="tr">
+														Турция										</option>
+																							<option value="ua">
+														Украина										</option>
+																							<option value="ph">
+														Филиппины										</option>
+																							<option value="fi">
+														Финляндия										</option>
+																							<option value="fr">
+														Франция										</option>
+																							<option value="hr">
+														Хорватия										</option>
+																							<option value="me">
+														Черногория										</option>
+																							<option value="cz">
+														Чехия										</option>
+																							<option value="ch">
+														Швейцария										</option>
+																							<option value="se">
+														Швеция										</option>
+																							<option value="lk">
+														Шри-Ланка										</option>
+																							<option value="ee">
+														Эстония										</option>
+													</optgroup>							</select>
+										</div>
+										<div class="ch-wrapper">
+											<input type="checkbox">
+											<label>Checkbox</label>
+										</div-->
+									</div>
+									<div class="tour-item">
+										<span class="title">Авиабилеты</span>
+										<!--div class="item-row">
+											<label>Откуда:</label>
+											<select name="dci" class="big-select">
+												<option title="title" value="0">Выберите...</option>
+													<optgroup label="Популярные">
+													<option selected="selected" value="38218">													Москва											</option>
+													<option value="32930">												Санкт-Петербург	</option>
+												</optgroup>
+												<optgroup label="Другие">
+													<option value="122706">													Екатеринбург										</option>
+													<option value="32170">													Казань										</option>
+													<option value="136420">													Нижний Новгород										</option>
+													<option value="44842">													Новосибирск										</option>
+													<option value="136423">													Пермь										</option>
+												</optgroup>
+											</select>
+										</div>
+										<div class="item-row">
+											<label>Куда: </label>
+											<select class="big-select" name="aco">
+											<option title="title" value="">Выберите...</option>
+											<optgroup label="Популярные">											<option value="at">
+															Австрия											</option>
+																									<option selected="selected" value="eg">
+															Египет											</option>
+																									<option value="in">
+															Индия											</option>
+																									<option value="id">
+															Индонезия											</option>
+																									<option value="it">
+															Италия											</option>
+																									<option value="mv">
+															Мальдивы											</option>
+																									<option value="th">
+															Таиланд											</option>
+																									<option value="fi">
+															Финляндия											</option>
+																									<option value="fr">
+															Франция											</option>
+																									<option value="ch">
+															Швейцария											</option>
+														</optgroup>
+														<optgroup label="Другие">										<option value="at">
+														Австрия										</option>
+																							<option value="ad">
+														Андорра										</option>
+																							<option value="be">
+														Бельгия										</option>
+																							<option value="bg">
+														Болгария										</option>
+																							<option value="br">
+														Бразилия										</option>
+																							<option value="gb">
+														Великобритания										</option>
+																							<option value="hu">
+														Венгрия										</option>
+																							<option value="vn">
+														Вьетнам										</option>
+																							<option value="de">
+														Германия										</option>
+																							<option value="gr">
+														Греция										</option>
+																							<option value="dk">
+														Дания										</option>
+																							<option value="do">
+														Доминиканская Республика										</option>
+																							<option value="eg">
+														Египет										</option>
+																							<option value="il">
+														Израиль										</option>
+																							<option value="in">
+														Индия										</option>
+																							<option value="id">
+														Индонезия										</option>
+																							<option value="jo">
+														Иордания										</option>
+																							<option value="ie">
+														Ирландия										</option>
+																							<option value="is">
+														Исландия										</option>
+																							<option value="es">
+														Испания										</option>
+																							<option value="it">
+														Италия										</option>
+																							<option value="ke">
+														Кения										</option>
+																							<option value="cy">
+														Кипр										</option>
+																							<option value="cn">
+														Китай										</option>
+																							<option value="cu">
+														Куба										</option>
+																							<option value="lv">
+														Латвия										</option>
+																							<option value="lt">
+														Литва										</option>
+																							<option value="mu">
+														Маврикий										</option>
+																							<option value="my">
+														Малайзия										</option>
+																							<option value="mv">
+														Мальдивы										</option>
+																							<option value="ma">
+														Марокко										</option>
+																							<option value="mx">
+														Мексика										</option>
+																							<option value="nl">
+														Нидерланды										</option>
+																							<option value="no">
+														Норвегия										</option>
+																							<option value="ae">
+														Объединенные Арабские Эмираты										</option>
+																							<option value="om">
+														Оман										</option>
+																							<option value="pl">
+														Польша										</option>
+																							<option value="pt">
+														Португалия										</option>
+																							<option value="ru">
+														Россия										</option>
+																							<option value="sc">
+														Сейшельские острова										</option>
+																							<option value="sg">
+														Сингапур										</option>
+																							<option value="sk">
+														Словакия										</option>
+																							<option value="si">
+														Словения										</option>
+																							<option value="us">
+														Соединенные Штаты Америки										</option>
+																							<option value="th">
+														Таиланд										</option>
+																							<option value="tn">
+														Тунис										</option>
+																							<option selected="selected" value="tr">
+														Турция										</option>
+																							<option value="ua">
+														Украина										</option>
+																							<option value="ph">
+														Филиппины										</option>
+																							<option value="fi">
+														Финляндия										</option>
+																							<option value="fr">
+														Франция										</option>
+																							<option value="hr">
+														Хорватия										</option>
+																							<option value="me">
+														Черногория										</option>
+																							<option value="cz">
+														Чехия										</option>
+																							<option value="ch">
+														Швейцария										</option>
+																							<option value="se">
+														Швеция										</option>
+																							<option value="lk">
+														Шри-Ланка										</option>
+																							<option value="ee">
+														Эстония										</option>
+													</optgroup>							</select>
+										</div-->
+										<div class="item-row">
+											<label>Дата вылета: </label>
+											<input type="text" class="calendar" id="fd1" data-offset="7" value=" / / "/>
+										</div>
+										<div class="item-row">
+											<label>Дата возвращения: </label>
+											<input type="text" class="calendar" id="fd2" data-offset="14" value=" / / "/>
+										</div>
+										<div class="item-row">
+											<label>Класс:</label>
+											<select id="fc">
+												<option selected="selected" value="ECONOMY">Эконом</option>
+												<option value="BUSINESS">Бизнес</option>
+											</select>
+										</div>
+										<div class="item-row">
+											<label for="tback">Билет обратно:</label>
+											<input type="checkbox" id="tback" /> 
+										</div>
+										<div class="item-row">
+											<label for="nochange">Без пересадок:</label>
+											<input type="checkbox" id="nochange" /> 
+										</div>
+										<!--div class="item-row">
+											<label for="night1">Ночей</label>
+											<select id="night1" name="nf">
+													<option value="1" >1</option>
+													<option value="2" >2</option>
+													<option value="3" >3</option>
+													<option value="4" >4</option>
+													<option value="5" selected="selected">5</option>
+													<option value="6" >6</option>
+													<option value="7" >7</option>
+													<option value="8" >8</option>
+													<option value="9" >9</option>
+													<option value="10" >10</option>
+													<option value="11" >11</option>
+													<option value="12" >12</option>
+													<option value="13" >13</option>
+													<option value="14" >14</option>
+													<option value="15" >15</option>
+													<option value="16" >16</option>
+													<option value="17" >17</option>
+													<option value="18" >18</option>
+													<option value="19" >19</option>
+													<option value="20" >20</option>
+													<option value="21" >21</option>
+													<option value="22" >22</option>
+													<option value="23" >23</option>
+													<option value="24" >24</option>
+													<option value="25" >25</option>
+													<option value="26" >26</option>
+													<option value="27" >27</option>
+													<option value="28" >28</option>
+													<option value="29" >29</option>
+													<option value="30" >30</option>
+											</select>
+											<select id="night2" name="nf">
+													<option value="1" >1</option>
+													<option value="2" >2</option>
+													<option value="3" >3</option>
+													<option value="4" >4</option>
+													<option value="5" selected="selected">5</option>
+													<option value="6" >6</option>
+													<option value="7" >7</option>
+													<option value="8" >8</option>
+													<option value="9" >9</option>
+													<option value="10" >10</option>
+													<option value="11" >11</option>
+													<option value="12" >12</option>
+													<option value="13" >13</option>
+													<option value="14" >14</option>
+													<option value="15" >15</option>
+													<option value="16" >16</option>
+													<option value="17" >17</option>
+													<option value="18" >18</option>
+													<option value="19" >19</option>
+													<option value="20" >20</option>
+													<option value="21" >21</option>
+													<option value="22" >22</option>
+													<option value="23" >23</option>
+													<option value="24" >24</option>
+													<option value="25" >25</option>
+													<option value="26" >26</option>
+													<option value="27" >27</option>
+													<option value="28" >28</option>
+													<option value="29" >29</option>
+													<option value="30" >30</option>
+											</select>
+										</div-->
+										<div class="item-row">
+											<label>Взрослые</label>
+											<div class="select">
+												<div class="select-holder">
+													<select id="ticketsPassengersCount" name="adc[0]">
+														<option value="1" >1</option>
+														<option value="2" selected="selected">2</option>
+														<option value="3" >3</option>
+														<option value="4" >4</option>
+														<option value="5" >5</option>
+														<option value="6" >6</option>
+														<option value="7" >7</option>
+														<option value="8" >8</option>
+												</select>
+												</div>
+											</div>
+										</div>
+										<div class="item-row">
+											<label>Дети</label>
+											<div class="select">
+												<div class="select-holder">
+													<select id="ticketsChildrenCount">
+														<option value="0" selected="selected">-</option>
+																<option value="1" >1</option>
+																<option value="2" >2</option>
+																<option value="3" >3</option>
+														</select>
+												</div>
+											</div>
+										</div>
+										<div class="item-row">
+											<label for="aprice">Цена:</label>
+											<input type="checkbox" id="aprice" /> 
+										</div>
+									</div>
+									<!--div class="tour-item">
+										<span class="title">Авиабилеты</span>
+										<select name="num">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+										<input type="text" class="calendar" value=" / / "/>
+										<select name="num">
+											<option value="1">combo-box</option>
+											<option value="1">combo-box</option>
+											<option value="1">combo-box</option>
+											<option value="1">combo-box</option>
+										</select>
+										<input type="text" class="calendar" value=" / / "/>
+										<div class="ch-wrapper">
+											<input type="checkbox">
+											<label>Checkbox</label>
+										</div>
+									</div-->
+								</div>
+							</div>
+						</div>
+						<div class="tab" id="tab2" style="display:none;">
+							<div class="form-row">
+								<label>Цвет формы: </label>
+								<div class="colorpick">
+									<input id="bgcolor" type="text" value="#0088c2"/>
+									<div class="colorSelector"></div>
+								</div>
+							</div>
+							<div class="form-row">
+								<label>Цвет границы формы: </label>
+								<div class="colorpick">
+									<input id="brdcolor" type="text" value="#0088c2"/>
+									<div class="colorSelector"></div>
+								</div>
+							</div>
+							<div class="form-row">
+								<label>Цвет заголовка: </label>
+								<div class="colorpick">
+									<input id="ttlcolor" type="text" value="#FFFFFF"/>
+									<div class="colorSelector"></div>
+								</div>
+							</div>
+							<div class="form-row">
+								<label>Цвет табов: </label>
+								<div class="colorpick">
+									<input id="tabcolor" type="text" value="#CCCCCC"/>
+									<div class="colorSelector"></div>
+								</div>
+							</div>
+							<div class="form-row">
+								<label>Параметры шрифта: </label>
+								<div class="font-description main-font">
+									<a href="bold" class="bold font-mod">Bold</a>
+									<a href="italic" class="italic font-mod">Italic</a>
+									<a href="underline" class="underline font-mod">Underline</a>
+									<select class="font-size" name="size" id="main-font-size">
+										<option value="8">8</option>
+										<option value="10">10</option>
+										<option selected="selected" value="12">12</option>
+										<option value="14">14</option>
+										<option value="16">16</option>
+										<option value="18">18</option>
+									</select>
+									<select name="font-type" id="main-font-family">
+										<option value="Arial, Verdana, Helvetica, sans-serif">Arial</option>
+										<option value="Tahoma, Helvetica, sans-serif">Tahoma</option>
+										<option value="Georgia, Helvetica, sans-serif">Georgia</option>
+										<option value="Courier New, Verdana, Helvetica, sans-serif">Courier New</option>
+										<option value="Times New Roman, Palatino Linotype, serif">Times New Roman</option>
+									</select>
+									<div class="colorpick">
+										<input type="text" class="color-value" id="main-font-color" value="#FFFFFF"/>
+										<div class="colorSelector"></div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<input type="checkbox" value="0" id="logo1" checked="checked"/>
+								<label for="logo1">Логотип: </label>
+							</div>
+							<div class="form-row corners-wrapper">
+								<label>Углы формы: </label>
+								<div class="radio-wrapper">
+									<input type="radio" value="1" id="corner1" name="corners"/>
+									<label for="corner1">Закругленные: </label>
+								</div>
+								<div class="radio-wrapper">
+									<input type="radio" id="corner2" value="0" checked="checked" name="corners" />
+									<label for="corner2" >Прямоугольные: </label>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="row-slider">
+									<span class="title">Ширина формы: </span>
+									<div class="slider"></div>
+									<div class="num-check"></div>
+									<input class="dvalue" type="text" value="100" id="width-custom" />
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="row-slider">
+									<span class="title">Высота формы: </span>
+									<div class="slider"></div>
+									<div class="num-check"></div>
+									<input class="dvalue" type="text" value="100" id="height-custom" />
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="size-selecter">
+									<span class="title">Стандартные размеры формы поиска: </span>
+									<div class="radio-wrapper">
+										<input id="size1" value="240|400" type="radio" name="form-size" />
+										<label for="size1">240x400</label>
+									</div>
+									<div class="radio-wrapper">
+										<input id="size2" value="300|250" type="radio" name="form-size" />
+										<label for="size2">300x250</label>
+									</div>
+									<div class="radio-wrapper">
+										<input id="size3" value="250|250" type="radio" name="form-size" />
+										<label for="size3">250x250</label>
+									</div>
+									<div class="radio-wrapper">
+										<input id="size4" value="336|280" type="radio" name="form-size" />
+										<label for="size4">336x280</label>
+									</div>
+									<!--div class="radio-wrapper">
+										<input id="size5" value="468|60" type="radio" name="form-size" />
+										<label for="size5">468x60</label>
+									</div-->
+									<div class="radio-wrapper">
+										<input id="size6" value="768|90" type="radio" name="form-size" />
+										<label for="size6">768x90</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab" id="tab3">
+							<div class="form-row">
+								<label>Цвет формы: </label>
+								<div class="colorpick">
+									<input id="adsbgcolor" type="text" value="#006a9d"/>
+									<div class="colorSelector"></div>
+								</div>
+							</div>
+							<div class="form-row">
+								<label>Параметры шрифта: </label>
+								<div class="font-description offers-font">
+									<a href="bold" class="bold font-mod">Bold</a>
+									<a href="italic" class="italic font-mod">Italic</a>
+									<a href="underline" class="underline font-mod">Underline</a>
+									<select class="font-size" name="size" id="soffer-fs">
+										<option value="8">8</option>
+										<option value="10">10</option>
+										<option selected="selected" value="12">12</option>
+										<option value="14">14</option>
+										<option value="16">16</option>
+										<option value="18">18</option>
+									</select>
+									<select name="font-type" id="soffer-ff">
+										<option value="Arial, Verdana, Helvetica, sans-serif">Arial</option>
+										<option value="Tahoma, Helvetica, sans-serif">Tahoma</option>
+										<option value="Georgia, Helvetica, sans-serif">Georgia</option>
+										<option value="Courier New, Verdana, Helvetica, sans-serif">Courier New</option>
+										<option value="Times New Roman, Palatino Linotype, serif">Times New Roman</option>
+									</select>
+									<div class="colorpick">
+										<input type="text" class="color-value" id="soffer-fc" value="#FFFFFF"/>
+										<div class="colorSelector"></div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="colorpick">
+									<div class="offer-counter">
+										<label for="soffer">Лучшие предложения</label>
+										<input id="soffer" type="checkbox" value="0" /> 
+									</div>
+									<div class="offer-counter" style="margin:10px 0 0; width:100%; overflow:hidden;">
+										<span class="title" style="width:200px; color: #394473; float:left;">Количество предложений: </span>
+										<select style="float:left;" id="offer-num">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option selected="selected" value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="aside">
+			<div class="demo-holder"></div>
+			<div class="codeplace"><textarea style="width:400px; margin:50px 0; display:block; height:200px;"></textarea></div>
+		</div>
+	</div>
+</body>
+</html>

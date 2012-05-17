@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	margin:0;
+	font:11px/14px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	color:#292929;
+	background:#f8f7f7;
+}
+img{border:0;}
+a{
+	color:#e24c0f;
+	text-decoration:none;
+}
+a:hover{text-decoration:underline;}
+p{margin:0 0 14px;}
+
+.offer-counter,
+.wrapper{
+	width:100%;
+	overflow: hidden;
+	position:relative;
+}
+
+.editbox{
+	width:60%;
+	overflow:hidden;
+	margin:40px 0 0 10px;
+	float: left;
+}
+.tabs-list{
+	width:100%;
+	overflow: hidden;
+	position:relative;
+	background:#00A6E3;
+}
+.rounded{
+	border-radius:5px;
+}
+.tour-wrapper,
+.form-row{
+	width:100%;
+	overflow: hidden;
+	position: relative;
+	margin: 10px 0 0;
+}
+.form-row label{
+	float: left;
+	width:200px;
+}
+.tab{
+	padding: 20px;
+
+}
+.form-row .title{
+	width:100%;
+}
+.form-row .currency,
+.form-row input{
+	width:400px;
+	text-align:center
+}
+.form-row select{
+	width:100px;
+}
+.tour-item{
+	height:1%;
+	overflow: hidden;
+	position: relative;
+	background: #FFF;
+	padding: 10px;
+	border: 2px #999 solid;
+	border-radius:10px;
+	margin: 20px 0px 0px;
+}
+.cat-selecter{
+	width:400px;
+	float:left;
+	overflow: hidden;
+}
+.form-row .calendar{
+	text-align:center;
+	width:auto;
+}
+.tabs-titles ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:100%;
+	overflow: hidden;
+}
+.tabs-titles ul li{
+	float:left;
+	margin: 0;
+	background: #303a69;
+	border-radius:10px 10px 0 0;
+	margin: 0 5px 0 0;
+}
+.tabs-titles ul .active{
+	background: #00A6E3;
+
+}
+.tabs-titles ul a{
+	color: #FFF;
+	padding: 10px 10px;
+	border-radius:10px 10px 0 0;
+	float: left;
+	text-decoration:none;
+}
+.colorpick{
+	float: left;
+	margin: 0 10px 0px 0px;
+}
+.colorpick input{
+	float: left;
+}
+.colorSelector{
+	float:left;
+	width:20px;
+	height:20px;
+	background: #999;
+	margin: 0 0 0 5px;
+}
+.font-description input{
+	float: left;
+	width:auto;
+}
+.font-description a{
+	float: left;
+	background: #666;
+	border-radius:3px;
+	margin: 0 0 0 5px;
+	padding: 2px;
+	text-indent:-9999px;
+	width:16px;
+	height:16px;
+	position: relative;
+	top:2px;
+}
+.font-description a.activated{
+	top:0px;
+	background-color: red;
+}
+.font-description .bold{
+	background: url('../images/text_bold.png') no-repeat;
+}
+.font-description .italic{
+	background: url('../images/text_italic.png') no-repeat;
+}
+.font-description .underline{
+	background: url('../images/text_underline.png') no-repeat;
+}
+.font-description .color-value{
+	display: none;
+}
+.corners-wrapper .radio-wrapper{
+	float: left;
+	width:200px;
+}
+.corners-wrapper .radio-wrapper input,
+.corners-wrapper .radio-wrapper label{
+	width:auto;
+	float: left;
+}
+.row-slider .title{
+	float: left;
+	width:100px;
+}
+.row-slider .slider{
+	width:300px;
+	float: left;
+}
+.aside{
+	float:right;
+	width:35%;
+	overflow:hidden;
+    margin: 40px 0 0 0;
+}
+.result-form{
+	width:300px;
+}
+.item-row{
+	width:100%;
+	overflow: hidden;
+	margin: 0 0 10px;
+}
+.form-row .dvalue{
+	float:left;
+	width:50px;
+}
+.quad-right,
+.quad-left{
+	float: left;
+}
+.select {
+	float:left;
+}
+.ui-datepicker-trigger{
+	left:5px;
+	position: relative;
+	top:3px;
+}
+.radio-wrapper{
+	width:100%;
+	overflow: hidden;
+	position:relative;
+}
+.form-row .radio-wrapper input{
+	float: left;
+	width:auto;
+}
+.form-row .tour-item input{
+	width:auto;
+}
+.form-row .radio-wrapper label{
+	width:50px;
+	margin:0 0 0 20px;
+}
+.tour-item .title{
+	font-size:16px;
+	font-weight: bold;
+	display: block;
+	margin: 0 0px 10px;
+}
